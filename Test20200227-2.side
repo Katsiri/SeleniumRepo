@@ -1,0 +1,123 @@
+{
+  "id": "408ba5c3-cbe2-4503-ada8-f543296cbfc5",
+  "version": "2.0",
+  "name": "Test1",
+  "url": "https://katsiri-katsin.outsystemscloud.com/TestSCG/Login.aspx",
+  "tests": [{
+    "id": "08c8fe32-7ebd-4991-aa21-2f47b6dcfd69",
+    "name": "trial1",
+    "commands": [{
+      "id": "aa204aa6-2b4b-4773-88d8-8c684b5b1d55",
+      "comment": "",
+      "command": "open",
+      "target": "/test/guru99home/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c6c062e-5505-4f30-a624-9a52a7042d5e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "969a6484-00ff-470d-be52-3ebf9936fc21",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Insurance Project",
+      "targets": [
+        ["linkText=Insurance Project", "linkText"],
+        ["css=.dropdown:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Insurance Project')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-brand-centered']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demo.guru99.com/insurance/v1/index.php']", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Insurance Project')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db2fdbed-2037-419c-b718-cd5d8c444c29",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74b36a83-0b63-4796-bfbb-3f89f66605cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "2244ac8a-bac5-4faa-88c3-7dec6e1752d3",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f93ed514-799a-488e-bbd9-b25fc02e1721",
+    "name": "trialcase2",
+    "commands": [{
+      "id": "790ec54d-068e-4613-9689-9329e728e0e8",
+      "comment": "",
+      "command": "open",
+      "target": "https://katsiri-katsin.outsystemscloud.com/TestSCG/Login.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae1e5127-8c60-48ff-a58c-bbcb0bdf6f6c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab5e7b79-4e87-4a65-ae56-cb75ab455451",
+      "comment": "",
+      "command": "click",
+      "target": "id=OutSystemsUIWeb_wt34_block_wtLogin_OutSystemsUIWeb_wt36_block_wtColumn1_OutSystemsUIWeb_wt30_block_wtLogin_wt3",
+      "targets": [
+        ["id=OutSystemsUIWeb_wt34_block_wtLogin_OutSystemsUIWeb_wt36_block_wtColumn1_OutSystemsUIWeb_wt30_block_wtLogin_wt3", "id"],
+        ["name=OutSystemsUIWeb_wt34$block$wtLogin$OutSystemsUIWeb_wt36$block$wtColumn1$OutSystemsUIWeb_wt30$block$wtLogin$wt3", "name"],
+        ["css=#OutSystemsUIWeb_wt34_block_wtLogin_OutSystemsUIWeb_wt36_block_wtColumn1_OutSystemsUIWeb_wt30_block_wtLogin_wt3", "css:finder"],
+        ["xpath=//input[@id='OutSystemsUIWeb_wt34_block_wtLogin_OutSystemsUIWeb_wt36_block_wtColumn1_OutSystemsUIWeb_wt30_block_wtLogin_wt3']", "xpath:attributes"],
+        ["xpath=//div[@id='OutSystemsUIWeb_wt34_block_wtLogin_OutSystemsUIWeb_wt36_block_wtColumn1_OutSystemsUIWeb_wt30_block_wtLogin']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "07205786-e36e-4c1c-8671-604aa7ad5475",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["08c8fe32-7ebd-4991-aa21-2f47b6dcfd69"]
+  }],
+  "urls": ["http://demo.guru99.com/", "https://katsiri-katsin.outsystemscloud.com/TestSCG/Login.aspx"],
+  "plugins": []
+}
